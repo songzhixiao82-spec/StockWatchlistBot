@@ -1,0 +1,13 @@
+ticker,quantity,total_cost,asset_type,notes
+ASML,0.15,251.21,stock,ASML holding from JPM
+AVGO,0.2,84.22,stock,Broadcom
+MVLL,0.2,43.24,leveraged_etf,2x MRVL exposure
+NVDA,2,427.00,stock,Nvidia
+NVDL,2,210.25,leveraged_etf,2x NVDA daily exposure
+QQQ,0.5,360.43,etf,Nasdaq 100 ETF
+QQQM,0.5,148.43,etf,Nasdaq 100 ETF lower-fee version
+SMH,0.5,298.71,etf,Semiconductor ETF
+SPY,0.5,373.87,etf,S&P 500 ETF
+TTAN,5,339.25,etf,Confirm exact product
+VOO,0.5,343.75,etf,S&P 500 ETF
+CASH,1,119.64,cash,Available cash

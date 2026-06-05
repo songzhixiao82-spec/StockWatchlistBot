@@ -1,0 +1,32 @@
+ticker,name,action,buy_low,buy_high,sell_low,sell_high,max_position_usd,priority,cooldown_hours,status,thesis
+AVGO,Broadcom,buy_or_sell,400,420,520,580,550,high,24,active,AI networking custom silicon and VMware cashflow; actionable only after expectation-reset weakness
+NVDA,Nvidia,buy_or_sell,205,220,270,320,850,high,24,active,Core AI GPU and accelerated computing leader
+ANET,Arista Networks,buy_or_sell,155,166,205,240,400,high,24,active,AI data-center networking beneficiary; buy meaningful pullbacks
+CEG,Constellation Energy,buy_or_sell,250,265,315,370,350,high,24,active,AI data-center power and nuclear scarcity theme
+VOO,Vanguard S&P 500 ETF,buy_or_sell,670,690,780,850,700,core,24,active,Core long-term S&P 500 exposure; only alert on mild pullback
+QQQM,Invesco Nasdaq 100 ETF,buy_or_sell,290,300,350,390,500,core,24,active,Long-term Nasdaq 100 growth exposure; prefer over QQQ for new adds
+SMH,VanEck Semiconductor ETF,buy_or_sell,600,615,720,820,650,high,24,active,Semiconductor basket exposure; avoid chasing if single-chip exposure already high
+ASML,ASML,buy_or_sell,1600,1700,1950,2200,500,medium,24,active,Semiconductor equipment monopoly-like exposure; buy pullbacks only
+TSM,Taiwan Semiconductor,buy_or_sell,410,435,520,600,450,high,24,active,AI foundry backbone and global semiconductor supply chain
+AMD,Advanced Micro Devices,buy_or_sell,470,500,620,720,350,medium,24,active,High beta AI accelerator alternative to Nvidia; needs deeper discount due to valuation
+NVDL,GraniteShares 2x Long NVDA Daily ETF,buy_or_sell,95,105,135,170,300,aggressive,24,active,Leveraged NVDA tactical exposure; avoid buying after strong up day
+MVLL,GraniteShares 2x Long MRVL Daily ETF,buy_or_sell,175,200,260,330,250,aggressive,24,active,Leveraged MRVL tactical exposure; strict pullback-only aggressive bucket
+LLY,Eli Lilly,buy_or_sell,1050,1100,1280,1450,450,high,24,active,GLP-1 obesity and diabetes drug growth; healthcare diversifier
+GE,GE Aerospace,buy_or_sell,300,315,370,430,350,high,24,active,Aerospace aftermarket and engine services; buy pullbacks not post-spike
+GOOGL,Alphabet,buy_or_sell,320,340,420,485,450,high,24,active,AI search cloud YouTube and relatively reasonable mega-cap valuation
+ETN,Eaton,buy_or_sell,370,395,500,570,350,medium,24,active,Electrification grid and data-center power infrastructure
+META,Meta Platforms,buy_or_sell,550,585,735,840,350,medium,24,active,AI ad tools high cash generation and app ecosystem
+AMZN,Amazon,buy_or_sell,220,235,295,338,350,medium,24,active,AWS AI plus retail margin improvement
+V,Visa,buy_or_sell,280,300,350,390,300,medium,24,active,High-quality payments compounder and non-AI diversifier
+RTX,RTX,buy_or_sell,155,166,193,216,300,medium,24,active,Defense aerospace aftermarket and geopolitical spending support
+CCJ,Cameco,buy_or_sell,95,105,143,178,250,aggressive,24,active,Uranium and nuclear demand leverage
+HOOD,Robinhood,buy_or_sell,70,80,105,130,250,aggressive,24,active,Fintech retail trading and crypto beta; only buy pullbacks
+NBIS,Nebius Group,buy_or_sell,225,245,320,400,250,aggressive,24,active,AI infrastructure and cloud compute high beta growth
+UBER,Uber,buy_or_sell,60,66,90,111,250,aggressive,24,active,Platform profitability and buybacks; non-AI growth
+FCX,Freeport-McMoRan,buy_or_sell,58,65,88,110,250,aggressive,24,active,Copper electrification grid and AI power infrastructure exposure
+COIN,Coinbase,buy_or_sell,135,150,204,253,200,aggressive,24,active,Crypto volume and institutional custody beta
+PLTR,Palantir,buy_or_sell,105,120,190,250,200,speculative,24,active,AI software narrative; only buy deep pullback because valuation is extreme
+CRWV,CoreWeave,buy_or_sell,85,98,150,200,200,speculative,24,active,AI cloud infrastructure; high debt capex and customer concentration risk
+TTAN,ServiceTitan,buy_or_sell,60,68,95,120,200,speculative,24,active,Vertical SaaS growth; very volatile so wait for deeper pullback
+QQQ,Invesco QQQ,sell,0,0,820,900,0,legacy,24,active,Legacy Nasdaq position; prefer QQQM for future adds
+SPY,SPDR S&P 500 ETF,sell,0,0,820,900,0,legacy,24,active,Legacy S&P 500 position; prefer VOO for future adds

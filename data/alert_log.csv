@@ -1,0 +1,4 @@
+timestamp,ticker,alert_type,price,message
+2026-06-04T22:58:14,AVGO,buy_zone,419.0299987792969,[STOCK BUY ALERT] AVGO entered buy zone
+2026-06-04T22:58:16,NVDA,buy_zone,218.71499633789062,[STOCK BUY ALERT] NVDA entered buy zone
+2026-06-04T22:58:17,CEG,buy_zone,264.7300109863281,[STOCK BUY ALERT] CEG entered buy zone
