@@ -31,6 +31,6 @@ TTAN,ServiceTitan,buy_or_sell,68,76,85,95,200,speculative,24,active,Vertical Saa
 QQQ,Invesco QQQ,buy_or_sell,690,705,805,900,300,legacy,24,active,"Legacy Nasdaq position; prefer QQQM for future adds, but allow pullback buy alerts"
 SPY,SPDR S&P 500 ETF,buy_or_sell,720,740,830,900,300,legacy,24,active,"Legacy S&P 500 position; prefer VOO for future adds, but allow pullback buy alerts"
 MSFT,Microsoft,buy_or_sell,395,420,500,580,500,high,24,active,New quality core: AI cloud software compounder; more stable than most semi names
-BRK.B,Berkshire Hathaway Class B,buy_or_sell,460,490,560,620,400,core,24,active,New defensive core ballast; useful when AI and tech rotate lower
+BRK-B,Berkshire Hathaway Class B,buy_or_sell,460,490,560,620,400,core,24,active,New defensive core ballast; useful when AI and tech rotate lower
 TMUS,T-Mobile US,buy_or_sell,168,178,205,230,300,medium,24,active,New defensive growth: telecom growth and buyback profile; held up well in Friday selloff
 MA,Mastercard,buy_or_sell,460,490,570,650,300,medium,24,active,New quality payments network; similar to Visa but slightly richer valuation
