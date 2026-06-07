@@ -1,35 +1,36 @@
-ticker,name,asset_type,bucket,priority,buy_zone_low,buy_zone_high,sell_zone_low,sell_zone_high,alert_mode,notes
-VOO,Vanguard S&P 500 ETF,ETF,core_index,high,660,680,780,850,normal,Core S&P 500; current near buy zone; good default long-term add
-SPY,SPDR S&P 500 ETF,ETF,core_index,high,720,740,830,900,normal,More liquid S&P 500 ETF; similar role to VOO
-QQQ,Invesco QQQ Trust,ETF,core_growth,high,690,705,805,900,risk_adjusted,Nasdaq-100; buy only in smaller clips when SMH/tech selloff is active
-QQQM,Invesco Nasdaq 100 ETF,ETF,core_growth,high,282,292,335,375,risk_adjusted,Lower-fee QQQ alternative for long-term holding
-SMH,VanEck Semiconductor ETF,ETF,semi_core,high,535,570,660,730,risk_adjusted,Semiconductor basket; do not treat single-day crash as all-clear buy
-MSFT,Microsoft,Stock,quality_core,high,395,420,500,580,normal,Add: best quality AI/cloud/software compounder
-BRK.B,Berkshire Hathaway Class B,Stock,defensive_core,high,460,490,560,620,normal,Add: defensive ballast; useful when AI/tech rotates lower
-TMUS,T-Mobile US,Stock,defensive_growth,medium,168,178,205,230,normal,Add: telecom growth + buyback profile; held up well on Friday
-MA,Mastercard,Stock,quality_core,medium,460,490,570,650,normal,Add: payment network quality; similar to V but slightly richer valuation
-NVDA,NVIDIA,Stock,core_ai,high,195,210,255,300,risk_adjusted,"Still top AI core; if QQQ/SMH are crashing, alert should say small tranche only"
-AVGO,Broadcom,Stock,core_ai_repair,high,365,395,480,540,risk_adjusted,Keep but downgrade from top-upside; wait for 425-440 reclaim for trend confirmation
-ASML,ASML Holding,Stock,semi_core,high,1550,1650,1900,2100,risk_adjusted,High-quality semiconductor equipment; add in tranches only
-TSM,Taiwan Semiconductor Manufacturing,Stock,semi_core,high,390,415,500,560,risk_adjusted,Core AI supply chain; geopolitical risk remains
-GOOGL,Alphabet,Stock,quality_core,high,345,370,440,520,normal,Strong quality compounder; AI/search risk but valuation reasonable
-META,Meta Platforms,Stock,quality_growth,medium,540,590,700,820,risk_adjusted,Strong cash flow but AI capex/ads sentiment can swing
-AMZN,Amazon,Stock,quality_growth,medium,225,245,300,360,normal,AWS + retail operating leverage; current price slightly above ideal buy zone
-V,Visa,Stock,quality_core,high,305,325,380,440,normal,Payment network; already one of the best steady compounders
-LLY,Eli Lilly,Stock,healthcare_core,high,1080,1130,1300,1450,normal,GLP-1/obesity leader; current price near buy zone
-GE,GE Aerospace,Stock,industrial_quality,medium,310,330,380,430,normal,Industrial/aerospace quality; helps diversify away from AI
-RTX,RTX,Stock,defense_quality,medium,168,182,210,240,normal,Defense/aerospace defensive growth; held up well in tech selloff
-ANET,Arista Networks,Stock,ai_networking,medium,145,155,195,230,risk_adjusted,Good AI networking name but high beta; now near buy zone
-CEG,Constellation Energy,Stock,ai_power,medium,245,260,310,360,risk_adjusted,AI power / nuclear theme; not as speculative as pure AI cloud
-ETN,Eaton,Stock,ai_power_infra,medium,350,380,465,550,risk_adjusted,"Good electrification theme, but do not chase above buy zone"
-CCJ,Cameco,Stock,uranium,medium,88,100,130,160,risk_adjusted,Uranium/nuclear high beta; current price just above ideal buy
-FCX,Freeport-McMoRan,Stock,copper_cyclical,low,55,62,75,90,risk_adjusted,Copper/cyclical exposure; buy only on deeper weakness
-UBER,Uber,Stock,platform_growth,medium,65,72,88,105,normal,Platform growth with reasonable PE; useful non-AI growth exposure
-HOOD,Robinhood,Stock,speculative_fintech,medium,70,82,105,135,speculative,High upside if crypto/trading volumes return; position size should be small
-COIN,Coinbase,Stock,speculative_crypto,low,125,145,190,250,speculative,Crypto beta; only buy when BTC/crypto setup supports it
-PLTR,Palantir,Stock,expensive_ai,low,100,120,160,220,watch_only,Great company but very expensive; current price not an attractive buy zone
-CRWV,CoreWeave,Stock,speculative_ai_cloud,low,80,95,130,180,speculative,Very high beta AI infra; keep small and avoid chasing
-NBIS,Nebius,Stock,speculative_ai_cloud,low,180,210,280,380,speculative,"High-upside AI cloud; after Friday drop, wait for deeper/cleaner entry"
-TTAN,ServiceTitan,Stock,speculative_software,low,68,76,85,95,speculative,Move sell alert lower; 85-90 should already trigger trim/watch
-NVDL,GraniteShares 2x Long NVDA Daily ETF,Leveraged ETF,leveraged_ai,low,80,96,130,170,leveraged_warning,Only tiny size; daily reset decay in chop
-MVLL,GraniteShares 2x Long MRVL Daily ETF,Leveraged ETF,leveraged_semi,low,90,120,180,240,leveraged_warning,Very high risk after large drawdown; not core holding
+ticker,name,action,buy_low,buy_high,sell_low,sell_high,max_position_usd,priority,cooldown_hours,status,thesis
+AVGO,Broadcom,buy_or_sell,365,395,480,540,550,high,24,active,Core AI semiconductor repair trade; keep but downgrade from top-upside; wait for 425-440 reclaim for trend confirmation
+NVDA,Nvidia,buy_or_sell,195,210,255,300,850,high,24,active,"Core AI GPU leader; if QQQ/SMH are crashing, buy only small tranche"
+ANET,Arista Networks,buy_or_sell,145,155,195,230,350,medium,24,active,AI data-center networking beneficiary but high beta; buy only meaningful pullbacks
+CEG,Constellation Energy,buy_or_sell,245,260,310,360,350,medium,24,active,AI data-center power and nuclear scarcity theme; not as speculative as pure AI cloud
+VOO,Vanguard S&P 500 ETF,buy_or_sell,660,680,780,850,700,core,24,active,Core long-term S&P 500 exposure; default long-term add on pullbacks
+QQQM,Invesco Nasdaq 100 ETF,buy_or_sell,282,292,335,375,500,core,24,active,Lower-fee Nasdaq 100 growth exposure; prefer over QQQ for new long-term adds
+SMH,VanEck Semiconductor ETF,buy_or_sell,535,570,660,730,650,high,24,active,"Semiconductor basket exposure; after Friday selloff, buy only in tranches"
+ASML,ASML,buy_or_sell,1550,1650,1900,2100,500,high,24,active,Semiconductor equipment monopoly-like exposure; high-quality semi core
+TSM,Taiwan Semiconductor,buy_or_sell,390,415,500,560,450,high,24,active,AI foundry backbone and global semiconductor supply chain; geopolitical risk remains
+AMD,Advanced Micro Devices,buy_or_sell,400,440,560,650,250,medium,24,active,High beta AI accelerator alternative; keep but require deeper discount due to valuation and Friday breakdown
+NVDL,GraniteShares 2x Long NVDA Daily ETF,buy_or_sell,80,96,130,170,200,aggressive,24,active,Leveraged NVDA tactical exposure only; daily reset decay in choppy markets
+MVLL,GraniteShares 2x Long MRVL Daily ETF,buy_or_sell,90,120,180,240,150,aggressive,24,active,Leveraged MRVL tactical exposure; not a core holding and needs strict sizing
+LLY,Eli Lilly,buy_or_sell,1080,1130,1300,1450,450,high,24,active,GLP-1 obesity and diabetes drug growth; healthcare diversifier and quality core
+GE,GE Aerospace,buy_or_sell,310,330,380,430,350,medium,24,active,Aerospace aftermarket and engine services; industrial quality diversifier
+GOOGL,Alphabet,buy_or_sell,345,370,440,520,450,high,24,active,Quality mega-cap with AI search cloud YouTube and reasonable valuation
+ETN,Eaton,buy_or_sell,350,380,465,550,350,medium,24,active,Electrification grid and data-center power infrastructure; avoid chasing above buy zone
+META,Meta Platforms,buy_or_sell,540,590,700,820,350,medium,24,active,AI ad tools high cash generation and app ecosystem; capex sentiment can swing
+AMZN,Amazon,buy_or_sell,225,245,300,360,350,medium,24,active,AWS AI plus retail margin improvement; quality non-semi growth
+V,Visa,buy_or_sell,305,325,380,440,350,high,24,active,High-quality payments compounder and non-AI diversifier
+RTX,RTX,buy_or_sell,168,182,210,240,300,medium,24,active,Defense aerospace aftermarket and geopolitical spending support
+CCJ,Cameco,buy_or_sell,88,100,130,160,250,medium,24,active,Uranium and nuclear demand leverage; high beta but useful AI power theme
+HOOD,Robinhood,buy_or_sell,70,82,105,135,250,aggressive,24,active,Fintech retail trading crypto and prediction-market beta; small position only
+NBIS,Nebius Group,buy_or_sell,180,210,280,380,200,speculative,24,active,AI infrastructure and cloud compute high beta growth; wait for deeper cleaner entry
+UBER,Uber,buy_or_sell,65,72,88,105,300,medium,24,active,Platform profitability and buybacks; useful non-AI growth exposure
+FCX,Freeport-McMoRan,buy_or_sell,55,62,75,90,250,aggressive,24,active,Copper electrification grid and AI power infrastructure exposure; cyclical
+COIN,Coinbase,buy_or_sell,125,145,190,250,200,aggressive,24,active,Crypto volume and institutional custody beta; only buy when crypto setup supports it
+PLTR,Palantir,buy_or_sell,100,120,160,220,200,speculative,24,active,AI software narrative; great company but extreme valuation means deep-pullback only
+CRWV,CoreWeave,buy_or_sell,80,95,130,180,200,speculative,24,active,AI cloud infrastructure; high debt capex and customer concentration risk
+TTAN,ServiceTitan,buy_or_sell,68,76,85,95,200,speculative,24,active,Vertical SaaS growth; very volatile and 85-90 should already trigger trim/watch
+QQQ,Invesco QQQ,buy_or_sell,690,705,805,900,300,legacy,24,active,"Legacy Nasdaq position; prefer QQQM for future adds, but allow pullback buy alerts"
+SPY,SPDR S&P 500 ETF,buy_or_sell,720,740,830,900,300,legacy,24,active,"Legacy S&P 500 position; prefer VOO for future adds, but allow pullback buy alerts"
+MSFT,Microsoft,buy_or_sell,395,420,500,580,500,high,24,active,New quality core: AI cloud software compounder; more stable than most semi names
+BRK.B,Berkshire Hathaway Class B,buy_or_sell,460,490,560,620,400,core,24,active,New defensive core ballast; useful when AI and tech rotate lower
+TMUS,T-Mobile US,buy_or_sell,168,178,205,230,300,medium,24,active,New defensive growth: telecom growth and buyback profile; held up well in Friday selloff
+MA,Mastercard,buy_or_sell,460,490,570,650,300,medium,24,active,New quality payments network; similar to Visa but slightly richer valuation
